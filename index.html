@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles.css">
+    <title>Formulario SIGEPU</title>
+</head>
+<body>
+    <main>
+        <form action="">
+            <label for="nombre">
+                <span>Nombre(s)</span>
+                <input type="text" name="nombre" id ="nombre" autocomplete="name" required> 
+            </label>
+            <label for="apellido">
+                <span>Apellido(s)</span>
+                <input type="text" name="apellido" id ="apellido" autocomplete="family-name"required>
+            </label>
+            <label for="telefono">
+                <span>Teléfono</span>
+                <input type="tel" name="telefono" id ="telefono" minlength="10" maxlength="14" required>
+            </label>
+            <label for="email">
+                <span>Email</span>
+                <input type="email" name="email" id ="email" autocomplete="email" required> 
+            </label>
+            <label for="password">
+                <span>Contraseña</span>
+                <input type="password" name="password" id ="password" required> 
+            </label>
+            <label for="rfc">
+                <span>RFC</span>
+                <input type="text" name="rfc" id ="rfc" required>
+            </label>
+            <select name="usuario" id="usuario">
+                <option value="tipo-usuario">Seleccionar...</option>
+                <option value="extranjero">Extranjero</option>
+                <option value="comunidad-unam">Comunidad UNAM</option>
+                <option value="estudiante-extranjero">Estudiante Extranjero</option>
+                <option value="publico-general">Público General</option>
+            </select>
+
+            <div id = "extranjero-quest">
+                <label for="cuenta">
+                    <span>Número de Cuenta</span>
+                    <input type="text" name="cuenta" id="cuenta" required>
+                </label>
+                <label for="empleado">
+                    <span>Número de Empleado</span>
+                    <input type="empleado" name="empleado" id="empleado" required>
+                </label>
+                <label for="pais">
+                    <span>País</span>
+                    <input type="text" name="pais" id="pais" required>
+                </label>
+                <label for="cliente">
+                    <span>ID de Cliente</span>
+                    <input type="text" name="cliente" id="cliente">
+                </label>
+            </div>
+
+            <div id = "comunidad-quest">
+                <label for="cuenta">
+                    <span>Número de Cuenta</span>
+                    <input type="text" name="cuenta" id="cuenta" required>
+                </label>
+                <label for="empleado">
+                    <span>Número de Empleado</span>
+                    <input type="empleado" name="empleado" id="empleado" required>
+                </label>
+
+            </div>
+            <div id ="estudiante-ext-quest"> 
+                <label for="website">
+                    <input type="text" name="website" id="website">
+                </label>
+            </div>
+            <div id = "publico-quest">
+                <label for="creacion">
+                    <span>Fecha de Creación</span>
+                    <input type="date" name="creacion" id="creacion" required>
+                </label>
+                <label for="update">
+                    <span>Fecha de Actualización</span>
+                    <input type="date" name="update" id="update" required>
+                </label>
+            </div>
+            <input type="submit">
+        </form>
+    </main>
+</body>
+<script src="./usuarios.js"></script>
+</html>
